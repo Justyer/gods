@@ -7,15 +7,15 @@ type Queue interface {
 
 const (
 	TypeLinkedQueue int32 = 1
-	TypeArrayQueue  int32 = 2
+	TypeSliceQueue  int32 = 2
 )
 
 func NewQueue(tp int32) Queue {
 	switch tp {
 	case TypeLinkedQueue:
 		return &LinkedQueue{}
-	case TypeArrayQueue:
-		return &ArrayQueue{}
+	case TypeSliceQueue:
+		return &SliceQueue{}
 	default:
 		return &LinkedQueue{}
 	}

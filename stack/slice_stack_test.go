@@ -4,8 +4,8 @@ import (
 	"testing"
 )
 
-func TestArrayStack(t *testing.T) {
-	s := &ArrayStack{}
+func TestSliceStack(t *testing.T) {
+	s := &SliceStack{}
 	s.Push(1)
 	s.Push(2)
 	s.Push(3)
